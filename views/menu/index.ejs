@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Chez Caitlin</title>
+</head>
+<body>
+    <h1>Menu Du Jour</h1>
+    <ul>
+        <% menu.forEach(function(i) { %>
+        <li>
+            <%= i.meal %>
+            :
+            <%= i.food %>
+            -
+            <%= i.serving? "Now serving!" : "Come back later to enjoy!" %>
+        </li>
+        <% }); %>
+    </ul>
+</body>
+</html>
